@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - "1.13.4"
+
+stages:
+  - build
+
+build:
+  starge: build
+  image: gy0624ww/hugo_blog
+  script:
+    

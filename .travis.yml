@@ -11,6 +11,8 @@ install:
   - wget https://github.com/gohugoio/hugo/releases/download/v0.51/hugo_0.51_Linux-64bit.deb
   - sudo dpkg -i hugo*.deb
   # 安装主题
+  - mkdir themes
+  - cd themes
   - git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
 
 script:

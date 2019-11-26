@@ -6,11 +6,10 @@ go:
 stages:
   - build
 
-install: go get -v github.com/spf13/hugo
+install: 
+  - go get -v github.com/spf13/hugo
 
 script:
-  # 安装主题
-  #- git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
   # 运行hugo命令
   - hugo
 

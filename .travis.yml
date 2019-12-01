@@ -8,7 +8,8 @@ stages:
 
 install: 
   # 安装最新的hugo
-  - go get github.com/spf13/hugo
+  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.59.1/hugo_0.59.1_Linux-64bit.deb
+  - sudo dpkg -i /tmp/hugo.deb
   - git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git themes/hugo-tranquilpeak-theme
 
 script:

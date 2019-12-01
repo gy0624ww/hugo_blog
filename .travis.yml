@@ -8,25 +8,25 @@ stages:
 
 install: 
   # 安装最新的hugo
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.51/hugo_0.51_Linux-64bit.deb
-  - sudo dpkg -i hugo*.deb
+  - go get github.com/spf13/hugo
+  - git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git themes/hugo-tranquilpeak-theme
 
 script:
   # 运行hugo命令
   - hugo
 
-after_script:
-  # 部署
-  - cd ./public
-  - git init
-  - git config user.name "gy0624ww"
-  - git config user.email "gy0624@foxmail.com"
-  - git add .
-  - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
-  # Github Pages
-  - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
-  # Github Pages
-  - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
+#after_script:
+#  # 部署
+#  - cd ./public
+#  - git init
+#  - git config user.name "gy0624ww"
+#  - git config user.email "gy0624@foxmail.com"
+#  - git add .
+#  - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+#  # Github Pages
+#  - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
+#  # Github Pages
+#  - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
 
 env:
  global:

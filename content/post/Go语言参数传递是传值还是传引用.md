@@ -7,7 +7,7 @@ categories:
 - Go
 tags:
 - Go
-disqusIdentifier: Go语言参数传递是传值还是传引用
+disqusIdentifier: golang-function-parameters-passed-by-value
 comments: true
 
 keywords:

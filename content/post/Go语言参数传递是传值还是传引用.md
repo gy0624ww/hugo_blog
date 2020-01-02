@@ -7,7 +7,7 @@ categories:
 - Go
 tags:
 - Go
-disqusIdentifier: golang-function-parameters-passed-by-value
+disqusIdentifier: "golang-function-parameters-passed-by-value"
 comments: true
 
 keywords:

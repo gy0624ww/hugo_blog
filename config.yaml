@@ -1,0 +1,14 @@
+---
+baseurl: "/"
+DefaultContentLanguage: "zh-cn"
+hasCJKLanguage: true
+languageCode: "zh-cn"
+title: "guanyue's blog"
+theme: "hugo-tranquilpeak-theme"
+metaDataFormat: "yaml"
+
+algolia:
+  index: "tellu.top"
+  key:  "ca9ebd267474e0e50c856daef4f1b311"
+  appID: "YVVY0SGE3V"
+---

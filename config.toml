@@ -18,7 +18,7 @@ defaultContentLanguage = "en-us"
 title = "渺小尘埃"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "tellutop"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-155223492-1"
 paginate = 7
 canonifyurls = true
 
@@ -209,8 +209,8 @@ canonifyurls = true
 
   #[[params.sharingOptions]]
   #  name = "Google+"
-    icon = "fa-google-plus"
-    url = "https://plus.google.com/share?url=%s"
+  #  icon = "fa-google-plus"
+  #  url = "https://plus.google.com/share?url=%s"
 
   [params.header.rightLink]
     #class = "open-algolia-search"

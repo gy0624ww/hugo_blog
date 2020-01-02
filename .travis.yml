@@ -48,4 +48,5 @@ deploy:
   target_branch: master
   email: gy0624@foxmail.com
   name: guanyue
+  fqdn: tellu.top
 

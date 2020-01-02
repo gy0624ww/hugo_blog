@@ -15,10 +15,10 @@ keywords:
 - 后端
 - 值传递
 - 参数
-thumbnailImage: https://s2.ax1x.com/2019/12/20/QOLqXj.jpg
+thumbnailImage: https://s2.ax1x.com/2020/01/02/ltDWIs.md.jpg
 thumbnailImagePosition: right
 metaAlignment: center
-coverImage: https://s2.ax1x.com/2019/12/20/QXE5s1.png
+coverImage: https://s2.ax1x.com/2020/01/02/ltDhin.png
 coverCaption: "A beautiful sunrise"
 coverMeta: in
 coverSize: partial

@@ -74,11 +74,18 @@ canonifyurls = true
   weight = 5
   identifier = "about"
   name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-user-circle-o\"></i>"
   url = "/#about"
 
 [[menu.main]]
   weight = 6
+  identifier = "friendLink"
+  name = "friendLink"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-handshake-o\"></i>"
+  url = "/page/friendLink"
+
+[[menu.main]]
+  weight = 7
   identifier = "search"
   name = "Search"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-search\"></i>"
@@ -91,6 +98,9 @@ canonifyurls = true
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
   url = "https://github.com/gy0624ww"
+
+
+
 #[[menu.links]]
 #  weight = 2
 #  identifier = "stackoverflow"

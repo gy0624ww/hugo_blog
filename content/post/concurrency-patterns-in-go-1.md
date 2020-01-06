@@ -9,7 +9,7 @@ tags:
 - 并发模式
 disqusIdentifier: "Go并发模式（一）"  
 comments: true  
-draft: true  
+draft: false 
 
 keywords:
 - Go

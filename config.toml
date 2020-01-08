@@ -283,7 +283,7 @@ canonifyurls = true
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "monokai"
+    style = "paraiso-light"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3

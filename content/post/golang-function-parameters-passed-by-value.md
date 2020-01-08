@@ -33,6 +33,7 @@ summary: "对于了解一门语言来说，会关心我们在函数调用的时�
 本文内容转发或参考自此博客，[传送门](https://www.flysnow.org/2018/02/24/golang-function-parameters-passed-by-value.html)
 {{< /alert >}}
 
+
 # 什么是传值（值传递）
 
 传值的意思是：函数传递的总是原来这个东西的一个副本，一副拷贝。比如我们传递一个int类型的参数，传递的其实是这个参数的一个副本；传递一个指针类型的参数，其实传递的是这个该指针的一份拷贝，而不是这个指针指向的值。  
@@ -58,7 +59,7 @@ func main() {
 
 我们运行，可以看到输入结果如下：
 
-```golang
+```
 原始指针的内存地址是：0xc42000c028
 函数里接收到的指针的内存地址是：0xc42000c038
 int值被修改了，新值为: 1
@@ -68,7 +69,7 @@ int值被修改了，新值为: 1
 
 所以通过输出我们可以看到，这是一个指针的拷贝，因为存放这两个指针的内存地址是不同的，虽然指针的值相同，但是是两个不同的指针。
 
-{{< image classes="fancybox center clear" src="image2.png" thumbnail="https://s2.ax1x.com/2020/01/02/lYH2DJ.png" src="https://s2.ax1x.com/2020/01/02/lYH2DJ.png" group="group:none" thumbnail-width="150px" thumbnail-height="300px" title="示意图" >}}
+{{< image classes="fancybox center clear" src="image2.png" thumbnail="https://s2.ax1x.com/2020/01/02/lYH2DJ.png" src="https://s2.ax1x.com/2020/01/02/lYH2DJ.png" group="group:none" thumbnail-width="" thumbnail-height="" title="示意图" >}}
 
 通过上面的图，可以更好的理解。 首先我们看到，我们声明了一个变量i,值为10,它的内存存放地址是`0xc420018070`,通过这个内存地址，我们可以找到变量`i`,这个内存地址也就是变量i的指针`ip`。
 
@@ -108,7 +109,7 @@ func main() {
 
 运行打印输出：
 
-```golang
+```
 原始map的内存地址是：0xc42000c028
 函数里接收到map的内存地址是：0xc42000c038
 map值被修改了，新值为: map[张三:20]
@@ -138,7 +139,7 @@ type Person struct {
 
 运行打印输出：
 
-```go
+```
 原始Person的内存地址是：0xc4200721b0
 函数里接收到Person的内存地址是：0xc4200721c0
 {张三}
@@ -329,7 +330,7 @@ func modify(p Person){
 
 运行打印输出结果为：
 
-```go
+```
 姓名为：张三,年龄为：19
 姓名为：张三,年龄为：20
 ```

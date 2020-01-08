@@ -76,7 +76,8 @@ for integer := range intSteam {
 {{< /tabbed-codeblock >}}
 
 结果输出并程序退出：
-```go
+
+```
 1 2 3 4 5
 ```
 
@@ -109,7 +110,7 @@ wg.Wait()
 {{< /tabbed-codeblock >}}
 
 输出：
-```golang
+```
 Unblocking goroutines...
 4 has begun
 2 has begun
@@ -185,7 +186,7 @@ fmt.Println("Done receiving!")
 
 结果是：
 
-```golang
+```
 Received: 0
 Received: 1
 Received: 2
@@ -249,7 +250,7 @@ select {
 
 结果输出：
 
-```go
+```
 Blocking on read...
 Unblocked 5.000170042s later
 ```
@@ -281,7 +282,7 @@ fmt.Printf("c1Count: %d\nc2Count: %d\n", c1Count, c2Count)
 
 结果：
 
-```go
+```
 c1Count: 505
 c2Count: 496
 ```
@@ -322,7 +323,7 @@ select{
 
 结果：
 
-```go
+```
 In default after 1.421μs
 ```
 
@@ -354,7 +355,7 @@ fmt.Printf("Achieved %v cycles of work before signalled to stop.\n", workCounter
 
 结果：
 
-```go
+```
 Achieved 5 cycles of work before signalled to stop.
 ```
 

@@ -6,16 +6,22 @@
 }
 
 .myfriends a {
-	color: black;
+	color: #37cde0bd;
 }
 
-/*.myfriends p {
+.myfriends a:visited {
+	color: #37cde0bd;
+}
+
+.myfriends p {
 	display: none;
-}*/
+}
 
 .friendurl {
 	text-decoration: none !important;
-	color: black;
+	color: #37cde0bd;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 14px;
 }
 
 .myfriend {
@@ -35,11 +41,13 @@
 	margin-top: 10px;
 	width: 48%;
 	display: inline-block !important;
-	float: left;
 }
 
 .frienddiv:hover {
 	background: rgba(87, 142, 224, 0.15);
+	color: #a636f0f1;
+	font-weight: lighter;
+	font-style: italic;
 }
 
 .frienddiv:hover .frienddivleft img {
@@ -72,6 +80,7 @@
 	white-space: nowrap;
 }
 </style>
+
 
 
 {{ partial "head.html" . }}

@@ -21,7 +21,7 @@ weight: 50
 
 {{< friend name="朱国华" url="https://www.iphpt.com/" logo="https://www.iphpt.com/static/home/assets/img/favicon.ico" word="有志青年" >}}  
 
-{{< friend name="虚位以待" url="https://tellu.top" logo="https://s2.ax1x.com/2020/01/08/lgXjpR.jpg" word="A funny guy" >}}  
+{{< friend name="骆晓光" url="https://shawn888.github.io/" logo="https://s2.ax1x.com/2020/01/09/lW3ytK.jpg" word="有着神奇经历的RD" >}}  
 
 {{< friend name="虚位以待" url="https://tellu.top" logo="https://s2.ax1x.com/2020/01/08/lgXjpR.jpg" word="A funny guy" >}}  
 

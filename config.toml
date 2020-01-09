@@ -15,7 +15,7 @@
 baseURL = "https://gy0624ww.github.io/"
 languageCode = "zh-cn"
 defaultContentLanguage = "en-us"
-title = "渺小尘埃"
+title = "渺小的尘埃"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "tellutop"
 googleAnalytics = "UA-155223492-1"

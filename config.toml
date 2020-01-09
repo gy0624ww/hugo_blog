@@ -126,7 +126,7 @@ canonifyurls = true
   # dateFormat = "2 January 2006"
 
   # Global keywords configuration. Following keywords will be add to every pages
-  keywords = ["development", "golang", "php", "lnmp", "日记", "技术博客", "博客", "python"]
+  keywords = ["development", "Go", "golang", "php", "lnmp", "日记", "技术博客", "博客", "python", "技术分享", "笔记"]
 
   # Syntax highlighter, possible choice between: "highlight.js" (recommanded) and "prism.js" (experimental)
   # You can comment it to disable syntax highlighting

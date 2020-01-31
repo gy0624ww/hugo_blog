@@ -53,6 +53,8 @@ summary: "剪辑视频利器-Final Cut Pro 入门操作"
 
 ## 检查器
 
+{{< image classes="fancybox center clear" thumbnail="https://s2.ax1x.com/2020/01/31/18S91g.md.png" src="https://s2.ax1x.com/2020/01/31/18S91g.png" group="group:none" thumbnail-width="" thumbnail-height="" title="检查器" >}}
+
 这里可以查看一些视频的信息，比如视频的尺寸和分辨率，时长，编码器等等，也可以修改视频的一些参数，比如不透明度，缩放，旋转，曝光，调色等等。
 
 ## 时间线 

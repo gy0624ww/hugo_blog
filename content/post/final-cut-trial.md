@@ -13,7 +13,7 @@ draft: false
 keywords:
 - Final Cut Pro
 - 剪辑
-thumbnailImage: https://s2.ax1x.com/2020/01/28/1MQSeS.md.png
+thumbnailImage: https://s2.ax1x.com/2020/01/28/1MnnCq.md.jpg
 thumbnailImagePosition: right
 metaAlignment: center
 coverImage: https://s2.ax1x.com/2020/01/28/1MQSeS.md.png

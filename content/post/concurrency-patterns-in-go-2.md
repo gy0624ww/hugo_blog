@@ -1,92 +1,29 @@
 ---
-title: "Concurrency Patterns in Go 2"
-date: 2020-01-06T19:58:40+08:00
+title: "Go并发模式（一）"
+date: 2019-11-18T10:50:19+08:00
 categories:
-- category
-- subcategory
+- 后端
+- Go 
 tags:
-- tag1
-- tag2
+- Go
+- 并发模式
+disqusIdentifier: "Go并发模式（二）"  
+comments: true  
+draft: true 
+
 keywords:
-- tech
-draft: true
-#thumbnailImage: //example.com/image.jpg
+- Go
+- 并发模式
+- 后端
+thumbnailImage: https://s2.ax1x.com/2019/12/20/QOLqXj.jpg
+thumbnailImagePosition: right
+metaAlignment: center
+coverImage: https://s2.ax1x.com/2019/12/20/QXE5s1.png
+coverCaption: "A beautiful sunrise"
+coverMeta: in
+coverSize: partial
+summary: "Go语言的最大的特性就是并发这一块，但是写好并且写出优雅的并发代码也是有挑战的一件事，我们今天开始来讲一些常见的并发模式,来打开Go语言新世界的大门！"
 ---
 
 <!--more-->
-
-想必大家看见过很多次这种写法  
-# for-select 
-
-{{< tabbed-codeblock "for-select.go" >}}
-<!-- tab go -->
-for { // 无限循环或者range 某个范围
-  select {
-    // 这里可以配合channel做一些事情
-  }
-}
-<!-- endtab -->
-{{< /tabbed-codeblock >}}
-
-没错，这是一个比较基础的组合，比如创建一个`goroutine`,并且在里面进行无限循环处理某项工作    
-比如说有的时候我们想把一些可以进行循环迭代的数据拆出来塞进`channel`里，比如这样:
-
-{{< tabbed-codeblock "for-select.go" >}}
-<!-- tab go -->
-for _,s := range []string{"one", "two", "three"} {
-  select {
-    case <-done: // 等待退出循环
-    return
-    case stringStream <-s: 
-  }
-}
-<!-- endtab -->
-{{< /tabbed-codeblock >}}
-
-下面是这个的两个变种写法：
-
-{{< tabbed-codeblock "for-select.go" >}}
-<!-- tab style1 -->
-for {
-  select {
-    case <-done: // 等待退出循环
-    return
-    default:
-  }
-  // 做一些非抢占式的工作
-}
-<!-- endtab -->
-
-<!-- tab style2 -->
-for {
-  select {
-    case <-done: // 等待退出循环
-    return
-    default:
-      // 做一些非抢占式的工作
-  }
-}
-<!-- endtab -->
-{{< /tabbed-codeblock >}}
-
-
-至于采用哪种写法取决于你的习惯了, 这个组合虽然很简单，但是要记好了，下面的其他并发模式会经常遇到
-
-# 子不教父之过
-
-在并发模式里有个不成文的约定：
-
-{{< alert warning >}}
-如果在一个goroutine里创建了一个子goroutine, 那父goroutine也必须得确保能随时关掉这个子goroutine
-{{< /alert >}}
-
-大家先记住这句话，我们先看一个例子：
-
-{{< tabbed-codeblock "for-select.go" >}}
-<!-- tab go -->
-
-<!-- endtab -->
-{{< /tabbed-codeblock >}}
-
-这个约定会确保我们的程序可扩展性，下下面的的并发模式也会用到这种思想
 

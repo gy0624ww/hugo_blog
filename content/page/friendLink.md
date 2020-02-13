@@ -14,7 +14,7 @@ layout: "links"
 
 {{< friend name="imepisode" url="https://imepisode.top/" logo="https://s2.ax1x.com/2020/01/07/lcQywD.png" word="地表最强SRE" >}}  
 
-{{< friend name="lattecake" url="https://lattecake.com/" logo="https://lattecake.com/static/favicon.ico" word="全能侠" >}}  
+{{< friend name="lattecake" url="https://lattecake.com/" logo="https://lattecake.com/images/apple-touch-icon.png" word="全能侠" >}}  
 
 
 {{< friend name="朱国华" url="https://www.iphpt.com/" logo="https://www.iphpt.com/static/home/assets/img/favicon.ico" word="有志青年" >}}  

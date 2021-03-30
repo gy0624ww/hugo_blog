@@ -234,7 +234,7 @@ canonifyurls = true
 
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
    [params.footer]
-     copyright = "<a href=\"\">辽ICP备15011453号</a>"
+     copyright = "<a href=\"https://beian.miit.gov.cn/#/Integrated/index\">辽ICP备15011453号</a>"
 
   [params.algolia]
   #appid="YVVY0SGE3V"

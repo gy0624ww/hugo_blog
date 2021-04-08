@@ -122,26 +122,26 @@ Span有父子级别概念：B和C以及D的关系就是父子，而C和D则不�
   - Data Store
   - Jaeger Query/Jaeger-UI
   
-  ### Jaeger Client
+### Jaeger Client
   
   这个client就是基于OpenTracing API协议的多语言实现。这部分就是你的代码里的一个类库文件，是你应用程序的一部分，埋点操作就是在这个部分。  
   应用程序通过API写入数据，把trace信息按照应用程序指定的采样策略传递给jaeger-agent
-  ### Agent
+### Agent
   
   Agent是一个Client并行部署的一个组件，是一个长期启动的守护进程，通过监听UDP接收Client发送过来的Trace信息，并批量发送到Collector.  
   Agent存在的目的就是解耦Client和Collector，为client屏蔽了路由和发现collector的细节。
   
-  ### Collector
+### Collector
   
   Collector是Jaeger的核心，接收从Agent发送过来的Trace信息，并对其进行验证，索引，转换并且最终存储起来。
   
-  ### Data Store
+### Data Store
   
   Jaeger 的数据存储是可插拔式组件设计，有多种存储可选：`Cassandra`, `Elasticsearch`, `Kafka（只能当做临时buffer,不能当最终存储）`。  
   
   但是官方推荐Canssandra,因为新特性更新和稳定性都是最好的。
   
-  ### Query
+### Query
   
   接受到查询请求，从后端存储中检索trace并通过UI进行展示。Query是无状态的，可以启动多个实例。
   

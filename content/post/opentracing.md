@@ -61,14 +61,13 @@ OpenTracing是CNCF（云原生计算基金会）对链路追踪做的一个规�
 Span有父子级别概念：B和C以及D的关系就是父子，而C和D则不是父子关系，{{< hl-text primary >}}父子的时间是重合的{{< /hl-text >}}，就类似所有子Span和Trace之间的时间关系，B消耗的时间是C和D的时间总合，而A消耗的时间则是B和E的总合
 
 图中：
-1. 在Trace A中，B和E是A的子Span            
-2. 在Trace A中，B和E是A的子Span
-3. 在Trace A中，B和E顺序执行，E的执行需要等待B的完成
-4. A的消耗时长为B和E的总合（这里都是理想情况）
-5. 在Span B中，C和D是B的子Span
-6. 在Span B中，C和D顺序执行，D的执行需要等待C的完成
-7. B的消耗时长为C和D的总合（这里都是理想情况）
-
+1. 在Trace A中，B和E是A的子Span              
+2. 在Trace A中，B和E是A的子Span  
+3. 在Trace A中，B和E顺序执行，E的执行需要等待B的完成  
+4. A的消耗时长为B和E的总合（这里都是理想情况）  
+5. 在Span B中，C和D是B的子Span  
+6. 在Span B中，C和D顺序执行，D的执行需要等待C的完成  
+7. B的消耗时长为C和D的总合（这里都是理想情况）  
 
 
 根据OpenTracing的规范，一个span封装了以下信息：  

@@ -15,6 +15,7 @@ keywords:
 - Go
 - 并发模式
 - 后端
+- Go并发模式
 thumbnailImage: https://s2.ax1x.com/2019/12/20/QOLqXj.jpg
 thumbnailImagePosition: right
 metaAlignment: center

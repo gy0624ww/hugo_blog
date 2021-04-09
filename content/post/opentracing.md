@@ -15,6 +15,8 @@ keywords:
 - opentracing
 - 链路追踪
 - 微服务
+- OpenTracing的介绍与实践
+- OpenTracing入门
 thumbnailImage: https://miro.medium.com/fit/c/200/200/1*drzMINEw0ObG5HeBX7OLDw.png
 thumbnailImagePosition: right
 metaAlignment: center

@@ -15,6 +15,7 @@ keywords:
 - 后端
 - 值传递
 - 参数
+- Go语言参数传递是传值还是传引用
 thumbnailImage: https://s2.ax1x.com/2020/01/02/ltDWIs.md.jpg
 thumbnailImagePosition: right
 metaAlignment: center
